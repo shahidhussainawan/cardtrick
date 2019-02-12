@@ -1,0 +1,53 @@
+function converter() 
+{
+    var num = parseInt(document.getElementById("Text1").value);
+    var result = (num-32)*5/9;
+    document.getElementById("txtresult").value = Math.round(result).toFixed(2)+" C ";
+}
+function converter1()
+{
+    var num = parseInt(document.getElementById("Text1").value);
+    var result = (num*9/5) + 32;
+    document.getElementById("txtresult").value = Math.round(result).toFixed(2)+" F "; 
+ }
+function converter2()
+ {
+    var num = parseInt(document.getElementById("Text1").value);
+    var result =num*2.20462; 
+    document.getElementById("txtresult").value = Math.round(result).toFixed(2)+" Lbs ";
+ }
+ function converter3()
+ {
+    var num = parseInt(document.getElementById("Text1").value);
+    var result = num*0.453592;
+    document.getElementById("txtresult").value = Math.round(result).toFixed(2)+" Kilograms ";
+ }
+ function converter4()
+ {
+    var num = parseInt(document.getElementById("Text1").value);
+    var result =num*0.3048;
+    document.getElementById("txtresult").value = Math.round(result).toFixed(2)+" Meters ";
+ }
+ function converter5()
+ {
+    var num = parseInt(document.getElementById("Text1").value);
+    var result =num*3.28084;
+    document.getElementById("txtresult").value = Math.round(result).toFixed(2)+" Feet ";
+ }
+function converter6()
+{
+    var num = parseInt(document.getElementById("Text1").value);
+    var result =num*2.54;
+    document.getElementById("txtresult").value = Math.round(result).toFixed(2)+" Centimeters ";
+}
+function converter7()
+{
+    var num = parseInt(document.getElementById("Text1").value);
+    var result = num*0.393701;
+    document.getElementById("txtresult").value = Math.round(result).toFixed(2)+" Inches ";
+}
+function clean()
+{
+document.getElementById("Text1").value = " ";
+document.getElementById("txtresult").value = " ";
+}
